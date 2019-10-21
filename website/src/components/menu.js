@@ -10,7 +10,7 @@ export default class Menu extends Component {
     const { activeItem } = this.state
 
     return (
-      <SemanticMenu fixed={"top"} compact={true}>
+      <SemanticMenu fixed={this.props.bottom ? "bottom" : "top"} compact={true}>
         <SemanticMenu.Item
           name='editorials'
           active={activeItem === 'editorials'}
