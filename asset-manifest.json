@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.js": "/website/static/js/main.73246c59.chunk.js",
-    "main.js.map": "/website/static/js/main.73246c59.chunk.js.map",
+    "main.css": "/website/static/css/main.a0cf0369.chunk.css",
+    "main.js": "/website/static/js/main.3a007e27.chunk.js",
+    "main.js.map": "/website/static/js/main.3a007e27.chunk.js.map",
     "runtime~main.js": "/website/static/js/runtime~main.bf0b749b.js",
     "runtime~main.js.map": "/website/static/js/runtime~main.bf0b749b.js.map",
-    "static/css/2.7a2b6819.chunk.css": "/website/static/css/2.7a2b6819.chunk.css",
-    "static/js/2.851dad3c.chunk.js": "/website/static/js/2.851dad3c.chunk.js",
-    "static/js/2.851dad3c.chunk.js.map": "/website/static/js/2.851dad3c.chunk.js.map",
+    "static/js/2.c7fdba0d.chunk.js": "/website/static/js/2.c7fdba0d.chunk.js",
+    "static/js/2.c7fdba0d.chunk.js.map": "/website/static/js/2.c7fdba0d.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.4e42587b03836942c4f9f5bd472eef5c.js": "/website/precache-manifest.4e42587b03836942c4f9f5bd472eef5c.js",
+    "precache-manifest.1e260f7f33919f4c3a3912b3f0ffad23.js": "/website/precache-manifest.1e260f7f33919f4c3a3912b3f0ffad23.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/2.7a2b6819.chunk.css.map": "/website/static/css/2.7a2b6819.chunk.css.map",
-    "static/media/semantic.min.css": "/website/static/media/outline-icons.ef60a4f6.woff"
+    "static/css/main.a0cf0369.chunk.css.map": "/website/static/css/main.a0cf0369.chunk.css.map",
+    "static/media/main.scss": "/website/static/media/SairaStencilOne-Regular.ca2c4b9f.ttf",
+    "static/media/logo.png": "/website/static/media/logo.b5c00256.png",
+    "static/media/menu-burger.svg": "/website/static/media/menu-burger.875c2269.svg"
   }
 }
