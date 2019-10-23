@@ -1,0 +1,32 @@
+@import '../styles/helper.scss';
+
+body{
+    margin: em(0);
+    font-family: $font-main;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+
+
+
+.text{
+    font-size: em(14);
+}
+
+@include tablet {
+    .text{
+        font-size: em(20);
+    }
+}
+
+@include desktop {
+    .text{
+        font-size: em(40);
+    }
+}
+
+
+

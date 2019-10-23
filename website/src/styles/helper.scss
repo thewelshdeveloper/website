@@ -1,0 +1,31 @@
+
+$screen-tablet:768px;
+$screen-desktop:1200px;
+
+
+@mixin tablet {
+    @media (min-width: $screen-tablet) { @content; }
+  }
+  @mixin desktop {
+    @media (min-width: $screen-desktop) { @content; }
+  }
+
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@font-face {
+    font-family: 'Saira Stencil One';
+    src: local('Saira Stencil One'), url('../assets/fonts/SairaStencilOne-Regular.ttf') format('truetype');
+}
+
+$color-pal-1: #00386D;
+$color-pal-2: #56DC92;
+$color-pal-3: #EDF5DF;
+
+
+$font-main: 'Saira Stencil One';
+  

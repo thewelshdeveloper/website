@@ -1,0 +1,66 @@
+@import '../../styles/helper.scss';
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: em(65);
+    background-color: $color-pal-1;
+
+    &-left{
+        display: flex;
+        align-items: inherit;
+
+        .logo{        
+            margin-left: em(10);
+            width: em(50);
+            height: em(45);
+            
+            &-name{
+                font-size: em(18);
+                color:$color-pal-3;
+                margin-left: em(10);
+            }
+        }
+    }
+    &-center{
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+
+        nav{
+            display: none;
+
+            @include tablet {
+                display: initial;
+            }
+
+            a{
+                cursor: pointer;
+                margin-right: em(20);
+                margin-left: em(20);
+                text-decoration: none;
+                color: $color-pal-3;
+
+                &:hover{
+                 color:$color-pal-2;   
+                }
+    
+            }
+        }
+
+    }
+    &-right{
+        display: flex;
+        .menu-burger{
+            margin-right: em(20);
+            cursor: pointer;
+
+            @include tablet{
+                display: none;
+            }
+        }
+
+    }
+
+}
