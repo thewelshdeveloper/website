@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
 import Logo from '../../assets/png/logo.png';
-import MenuBurger from '../../assets/svg/menu-burger.svg';
 import './index.scss';
 
 export default class Header extends Component {
+ state={
+    navOpen: false
+ }
+
+ toggleNavigation = () => {
+     this.setState(prevState => ({
+        navOpen: !prevState.navOpen
+    }));
+ }
+
+ closeModal = () => {
+     const {navOpen} = this.state;
+
+     if(navOpen) {
+         this.setState({navOpen: false})
+     }
+ }
     render() {
+        const{navOpen} = this.state;
         return (
             <header className='header'>
                 <div className='header-left'>
@@ -12,14 +29,16 @@ export default class Header extends Component {
                     <span className='logo-name'>TWD</span>
                 </div>
                 <div className='header-center'>
-                <nav className='nav'>
-                        <a href='#home'>About</a>
-                        <a href='#home'>Sometext</a>
-                        <a href='#home'>Another text</a>
-                    </nav>
+                    <div className={`nav-container ${navOpen ? "open" : "closed"}`}>
+                        <nav className='nav'>
+                            <a onClick={this.closeModal} href='#home'>HOME</a>
+                            <a onClick={this.closeModal} href='#about'>ABOUT ME</a>
+                            <a onClick={this.closeModal} href='#projects'>PROJECTS</a>
+                        </nav>
+                    </div>
                 </div>
                 <div className='header-right'>
-                    <img className='menu-burger' src={MenuBurger} alt='Mobile menu icon - 3 lines'/>
+                    <i className={`menu-burger icon icon-${navOpen ? 'Cross' : 'Hamburger'}`} alt='Mobile menu icon - 3 lines' onClick={this.toggleNavigation}/>
                 </div>
             </header>
         )

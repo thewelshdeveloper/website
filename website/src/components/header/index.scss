@@ -1,66 +1,117 @@
-@import '../../styles/helper.scss';
+@import "../../styles/helper.scss";
 
-.header{
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: em(65);
+  background-color: $color-pal-1;
+
+  &-left {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: em(65);
-    background-color: $color-pal-1;
+    align-items: inherit;
 
-    &-left{
-        display: flex;
-        align-items: inherit;
+    .logo {
+      margin-left: em(10);
+      width: em(50);
+      height: em(45);
 
-        .logo{        
-            margin-left: em(10);
-            width: em(50);
-            height: em(45);
-            
-            &-name{
-                font-size: em(18);
-                color:$color-pal-3;
-                margin-left: em(10);
-            }
-        }
+      &-name {
+        font-size: em(18);
+        color: $color-pal-3;
+        margin-left: em(10);
+      }
     }
-    &-center{
+  }
+
+  &-center {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    .nav-container{
+
+      &.closed{
+        display: none;
+      }
+        
+      &.open{
         display: flex;
-        flex-grow: 1;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($color-pal-1, 0.9);
+        z-index: 1;
+      }
 
-        nav{
-            display: none;
-
-            @include tablet {
-                display: initial;
-            }
-
-            a{
-                cursor: pointer;
-                margin-right: em(20);
-                margin-left: em(20);
-                text-decoration: none;
-                color: $color-pal-3;
-
-                &:hover{
-                 color:$color-pal-2;   
-                }
-    
-            }
-        }
-
-    }
-    &-right{
+      nav {
         display: flex;
-        .menu-burger{
-            margin-right: em(20);
-            cursor: pointer;
+        flex-direction: column;
 
-            @include tablet{
-                display: none;
-            }
+        a {
+          font-size: em(30);
+          cursor: pointer;
+          padding-top: em(20);
+          padding-bottom: em(20);
+          text-decoration: none;
+          color: $color-pal-3;
+          border-bottom: 2px white solid;
+
+          &:hover {
+            color: $color-pal-2;
+          }
         }
-
+      }
     }
 
+    @include tablet {
+        .nav-container {
+            display: initial;
+            position: initial;
+            flex-direction: row;
+            justify-content: center;
+
+            &.closed{
+              display: initial;
+            }
+      
+            nav {
+              display: flex;
+              flex-direction: row;
+
+              a {
+                font-size: em(20);
+                margin-left: em(20);
+                margin-right: em(20);
+                border-bottom: none;     
+                padding: 0;           
+            }
+          }
+        }
+    }
+  }
+  &-right {
+    display: flex;
+    z-index:2;
+
+      .icon {
+          font-size: em(30);
+          color:$color-pal-3;
+          margin-right:em(20);
+
+          &:hover{        
+              color:$color-pal-2;
+          }
+      }
+
+      @include tablet {
+        display: none;
+      }
+  }
 }

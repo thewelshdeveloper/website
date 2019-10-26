@@ -1,12 +1,14 @@
 @import '../styles/helper.scss';
+@import '../styles/icomoon.scss';
 
 body{
     margin: em(0);
     font-family: $font-main;
+    background-color:$color-pal-1;
 }
 
-.grow{
-    flex-grow: 1;
+html.can-touch a:hover{
+    background: none; /* disable hover effect on touch devices */
 }
 
 
