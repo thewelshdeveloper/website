@@ -38,7 +38,7 @@ export default class Header extends Component {
                     </div>
                 </div>
                 <div className='header-right'>
-                    <i className={`menu-burger icon icon-${navOpen ? 'Cross' : 'Hamburger'}`} alt='Mobile menu icon - 3 lines' onClick={this.toggleNavigation}/>
+                    <i className={`icon icon-${navOpen ? 'cross' : 'hamburger'}`} alt='Mobile menu icon - 3 lines' onClick={this.toggleNavigation}/>
                 </div>
             </header>
         )
