@@ -12,11 +12,7 @@
         z-index: -1;
 
 
-        .wave{
-            position: absolute;
-            top: 98%;
-            width: 101%;
-        }
+       
     }
 
     &bottom{
@@ -31,5 +27,43 @@
 
      
 }
+
+#wave-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -100px;
+    
+  }
   
+  #wave {
+    display: block;
+    position: relative;
+    height: 40px;
+    background: $color-pal-1;
+  }
   
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: $color-pal-2;
+    right: -25%;
+    top: 20px
+  }
+  
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: $color-pal-1;
+    left: -25%;
+    top: -240px;
+  }
