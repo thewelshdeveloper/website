@@ -1,0 +1,43 @@
+@import '../../styles/helper.scss';
+
+.wave-container {
+    width: 100%;
+    height: em(100);
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    z-index: -1;
+
+    .wave {
+        display: block;
+        position: relative;
+        height: em(40);
+        background: $color-pal-1;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            width: 100%;
+            height: em(300);
+            background-color: $color-pal-2;
+            right: -25%;
+            top: em(20);
+          }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            width: 100%;
+            height: em(300);
+            background-color: $color-pal-1;
+            left: -25%;
+            top: em(-240);
+        }
+      }
+  }
+  
+ 

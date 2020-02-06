@@ -9,13 +9,13 @@ export default class Home extends Component {
     return (
       <div className="home-container">
         <Wave/>
-        <Header />
+        {/* <Header /> */}
         <div className="background-top">
-        hi
+        {/* <Title/>  */}
         </div>
         <div className="background-bottom">
         </div>
-         {/* <Title/>  */}
+         
       </div>
     );
   }

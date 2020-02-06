@@ -1,0 +1,29 @@
+@import '../../styles/helper.scss';
+
+.wrapper{
+    display: flex;
+    font-size: em(40);
+    background-color: blue;
+
+.text-left{
+    display: flex;
+    margin-left:15px;
+    padding-left:15px;
+    width: 50px;
+    word-break: normal;
+    border-left: 5px solid rgba($color-pal-3,0.5);
+}
+.text{
+    width: 50px;
+    float:left;
+    margin-left:-20px;
+    color: rgba($color-pal-3,0.5);
+
+    -moz-transform:    scaleX(-1); /* Gecko */
+    -o-transform:      scaleX(-1); /* Opera */
+    -webkit-transform: scaleX(-1); /* Webkit */
+    transform:         scaleX(-1); /* Standard */
+    word-break: normal;
+
+}
+}
