@@ -1,0 +1,12 @@
+@import '../../styles/helper';
+
+.heading-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: em(10px);
+    font-size: em(20);
+    text-transform: uppercase;
+    color: $color-pal-1;
+}

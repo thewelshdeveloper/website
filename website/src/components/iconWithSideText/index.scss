@@ -1,0 +1,45 @@
+@import '../../styles/helper';
+
+.icon-text-container{
+    display: flex;
+    flex-direction: column;
+
+.inner-container{
+    display: flex;
+    align-items: center;
+    flex-direction: inherit;
+    padding: em(10);
+
+    @include tablet{
+        flex-direction: row;
+    }
+
+    img{
+        padding:em(10);
+    }
+
+    p{
+        font-size: em(21);
+        padding: em(10);
+        text-align: justify;
+        color: $color-pal-1;
+    }
+}
+    hr {
+        border: 0;
+        height: 2px;
+        width: 80%;
+        margin-top: em(15);
+        background-image: linear-gradient(to right, 
+            rgba(86, 220, 146, 0),
+            rgba(86, 220, 146, .5),
+            rgba(86, 220, 146, 100), 
+            rgba(86, 220, 146, .5), 
+            rgba(86, 220, 146, 0));
+
+            @include tablet{
+                width: 60%;
+                margin-top: em(30);
+            }
+    }
+}

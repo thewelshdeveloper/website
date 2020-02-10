@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Home from './home';
+import About from './about';
 import './main.scss';
 
 export default class Main extends Component {
@@ -7,7 +8,7 @@ export default class Main extends Component {
         return (
             <React.Fragment>
                 <Home/> 
-                bv vs jkdv ks
+                <About/>
             </React.Fragment>
         )
     }
